@@ -4,13 +4,17 @@ from src.model.customer import Customer
 from src.model.product import Product
 from src.model.shoppingcart import ShoppingCart
 
-CUSTOMER = Customer("test")
-PRICE = 100
-PRODUCT = "T"
+CUSTOMER = Customer("test")  # customer instance
+PRICE = 100  # price
+PRODUCT = "T"  # product
 
 
 class ShoppingCartTest(unittest.TestCase):
     def test_should_calculate_price_with_no_discount(self):
+        """
+
+        :return:
+        """
         products = [Product(PRICE, "", PRODUCT)]
         cart = ShoppingCart(CUSTOMER, products)
 
