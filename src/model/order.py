@@ -1,5 +1,13 @@
 class Order:
+    """
+    order class: used to create a order instance
+    """
     def __init__(self, loyalty_points_earned=0, total_price=0):
+        """
+        order instance initialize
+        :param loyalty_points_earned:
+        :param total_price:
+        """
         self.loyalty_points = loyalty_points_earned
         self.total = total_price
 
